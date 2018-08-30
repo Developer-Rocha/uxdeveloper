@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+
+	<!-- 
+	ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+	ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+	ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+	ooooooooooooooo    ooooooooo    ooooo    oooooo    oooooooooooooooooo
+	ooooooooooooooo    ooooooooo    oooooo    oooo    ooooooooooooooooooo
+	ooooooooooooooo    ooooooooo    oooooooo    o    oooooooooooooooooooo
+	ooooooooooooooo    ooooooooo    ooooooooo       ooooooooooooooooooooo
+	ooooooooooooooo    ooooooooo    ooooooooo      oooooooooooooooooooooo
+	ooooooooooooooo    ooooooooo    oooooooo        ooooooooooooooooooooo
+	ooooooooooooooo    ooooooooo    ooooooo    o     oooooooooooooooooooo
+	oooooooooooooooo    ooooooo    ooooooo    oooo    ooooooooooooooooooo
+	oooooooooooooooo    ooooooo    oooooo    oooooo    oooooooooooooooooo
+	ooooooooooooooooo             oooooo    oooooooo    ooooooooooooooooo
+	ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+	ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+	Este é um site feito por Fabrício Rocha - Web Developer.
+	Websites 100% responsivo e com todo cuidado e perfeccionismo 
+	na experiência do utilizador (UX).
+
+	-->
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Web Design, Web Marketing, Criação de Website, Web Developer">
+	<meta name="author" content="Fabrício Rocha">
+	<meta name="description" content="Agência de crianção de website, Web developer freelancer em Lisboa, 
+	Porto. Marketing Digital e SEO.">
+	<meta property="og:url" content="https://uxdevelop.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="UX Developer - Freelancer em desenvolvimento Web">
+	<meta property="og:description" content="Desenvolvemos Websites 100% responsivo e com um design bem moderno.">
+	<meta property="og:author" content="Fabrício Rocha">
+	<meta property="og:image" content="images/logo-facebook.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="90">
+	<meta property="og:image:height" content="90">
+
+	<title>UX Developer | Desenvolvimento Web</title>
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Mudando o menu navbar com rolagem usando JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	jQuery(function () {
+	  jQuery(window).scroll(function () {
+	    if (jQuery(this).scrollTop() > 300) {
+	     $("nav.navbar-transparente").addClass("menu-diferente");
+	    } else {
+	     $("nav.navbar-transparente").removeClass("menu-diferente");
+	    }
+	  });
+	});
+	</script>
+
+	<script type="text/javascript">
+	jQuery(function () {
+	  jQuery(window).scroll(function () {
+	    if (jQuery(this).scrollTop() > 300) {
+	     $(".img-logo").addClass("logo-scroll");
+	    } else {
+	     $(".img-logo").removeClass("logo-scroll");
+	    }
+	  });
+	});
+	</script>
+
+	<!-- Scroll suave -->
+	<script>
+	jQuery(document).ready(function($) { 
+   		$(".scrollSuave").click(function(event){        
+	        event.preventDefault();
+	        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+ 		});
+	});
+	</script>
+
+
+	<!-- Fim edição do navbar scroll -->
+
+	<!-- Mensagem de envio do formulário de contato-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+	    jQuery('#ajax_form').submit(function(){
+	        var dados = jQuery( this ).serialize();
+	
+	        jQuery.ajax({
+	            type: "POST",
+	            url: "envia.php",
+	            data: dados,
+	            success: function envio()
+	            {
+	            var cont = "Mensagem enviada com sucesso";
+	            document.getElementById("msg").innerHTML = cont;
+	            }
+	        });
+	
+	        return false;
+	    });
+	});
+	</script>
+
+	<!-- Menu collapse recolher ao clicar no link -->
+	<script>
+		$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+	</script>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+		<div class="container">
+			
+			<!-- LOGO & TOGGLE-->
+			<div class="navbar-header">
+				<!-- botão toggle -->
+				<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#barra-navegacao">
+					<span class="sr-only">alternar navegação</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<!-- LOGO -->
+				<a class="navbar-brand" href="index.html">
+					<span class="img-logo">UX Developer</span>
+				</a><!-- /logo -->
+			</div>
+
+			<!-- NAVBAR -->
+			<div class="collapse navbar-collapse" id="barra-navegacao">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="scrollSuave" href="#top">Início</a></li>
+					<li><a class="scrollSuave" href="#my-project">Projetos</a></li>
+					<li><a class="scrollSuave" href="#sobre">Sobre</a></li>
+					<li><a class="scrollSuave" href="#skill">Skills</a></li>
+					<li><a class="scrollSuave" href="#contacto">Contato</a></li>
+				</ul><!-- /navbar -->
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="container capa" id="top">
+		<div class="row texto-capa">
+			
+			<div class="col-md-5">
+				<div class="box-main">
+					<h1>Precisa de um Web Developer?</h1>
+					<a href="#contacto" class="btn btn-default btn-custom scrollSuave">Entre em contato</a>
+				</div>
+			</div>
+
+			<div class="col-md-7 hidden-sm hidden-xs">
+				<div>
+					<img class="my-img" src="images/webDesign.png">
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<section id="my-project">
+		<div class="container">
+			<div class="row">
+				
+				<div class="block-title"><h2>Projetos</h2></div>
+
+				<div class="col-md-4">
+					<div class="logo-client">
+						<img style="width: 180px; height: 55px;" src="images/microsoft.png">
+					</div>
+
+					<div class="item">
+						<picture>
+							<a href="https://microsoft-informatica.com/" target="_blank">
+								<img src="images/portfolio-microsoft2.png" title="Desenvolvimento Website da Microsoft Informática" alt="Desenvolvimento Website da Microsoft Informática">
+							</a>
+						</picture>
+					</div>
+					<div class="description">
+						<p>
+							Website da Microsoft Informática. Em WordPress & Visual Composer.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="logo-client client02">
+						<img style="width: 70px; height: 65px;" src="images/logo-blk.png">
+					</div>
+
+					<div class="item">
+						<a href="index.html">
+							<picture>
+								<img src="images/portfolio-uxdeveloper.png" title="Website da UX Developer" alt="Website da UX Developer">
+							</picture>
+						</a>
+					</div>
+					<div class="description">
+						<p>UX Developer desenvolvido com HTML, CSS, Bootstrap & JQuery</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="logo-client">
+						<img style="width: 180px; height: 65px; margin-top: -15px;" src="images/spotify-demo.png">
+					</div>
+
+					<div class="item">
+						<a href="https://spotifydemo.uxdevelop.com/" target="_blank">
+							<picture>
+								<img src="images/portfolio-spotify.png" title="Website DEMO da Spotify" alt="Website DEMO da Spotify">
+							</picture>
+						</a>
+					</div>
+					<div class="description">
+						<p>Projeto demo do website Spotify em HTML, CSS & Bootstrap</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="sobre">
+		<div class="container">
+			<div class="row">
+				
+				<div class="block-title"><h2>Sobre</h2></div>
+
+				<div class="col-md-7 about-me">
+					<div>
+						<h3>Por trás da marca...</h3>
+					</div>
+					<div>
+						<p>
+							Hello World! Obrigado desde já por estares a visitar a UX Developer. Chamo-me Fabrício Rocha e sou web developer, apaixonado pelo que faço! Criei esta marca com o intuito de divulgar os meus projetos e serviços. 
+						</p>
+						<p>
+							Há alguns anos atrás comecei a aprender HTML e CSS por pura curiosidade. Em poucos dias, fiquei rendido à programação.
+						</p>
+						<p>
+							Depois de aprender HTML e CSS, entrei no mundo de <strong>web development</strong>, área a que me tenho dedicado e em que tenho vindo a aprimorar os meus conhecimentos. Hoje tenho excelentes conhecimentos em frameworks como Bootstrap, linguagens como C#, Javascript e aprofundando em PHP (a menina dos meus olhos).
+						</p>
+						<br>
+						<h5><i>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Cada sonho que você deixa para trás, é um pedaço do seu futuro que deixa de existir."<br></i>
+						</h5>
+						<div class="author-text"><h5>Steve Jobs</h5></div>
+					</div>
+				</div>
+
+				<div class="col-md-5">
+					<div class="img-box">
+						<img src="images/perfil.jpg">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="skill">
+		<div class="container">
+			<div class="row">
+				
+				<div class="block-title"><h2>Skills</h2></div>
+				
+				<div class="col-xs-6 col-md-3 article">
+					<div class="article-img">
+						<img src="images/html.png">
+					</div>
+
+					<div class="content">
+						<h3>HTML & CSS</h3>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3 article">
+					<div class="article-img">
+						<img src="images/bootstrap.png">
+					</div>
+
+					<div class="content">
+						<h3>Bootstrap</h3>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3 article">
+					<div class="article-img">
+						<img src="images/javascript.png">
+					</div>
+
+					<div class="content">
+						<h3>Javascript</h3>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3 article">
+					<div class="article-img">
+						<img src="images/php.png">
+					</div>
+
+					<div class="content">
+						<h3>PHP</h3>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3 article">
+					<div class="article-img">
+						<img src="images/wordpress.png">
+					</div>
+
+					<div class="content">
+						<h3>WordPress</h3>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3 article">
+					<div class="article-img">
+						<img src="images/illustrator.png">
+					</div>
+
+					<div class="content">
+						<h3>Illustrator</h3>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3 article">
+					<div class="article-img">
+						<img src="images/csharp.png">
+					</div>
+
+					<div class="content">
+						<h3>C# (C Sharp)</h3>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-md-3 article">
+					<div class="article-img">
+						<img src="images/jquery.png">
+					</div>
+
+					<div class="content">
+						<h3>JQuery</h3>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- ROW SKILL 2 -->
+			<div class="row row-skill">
+
+				<div class="banner">
+					<a href="https://github.com/Developer-Rocha" target="_blank"><img class="img-responsive" src="images/banner.jpg" title="Conheça meus projetos no Github" alt="Conheça meus projetos no Github"></a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="contacto">
+		<div class="container">
+			<div class="row">
+				
+				<div class="block-title"><h2>Contato</h2></div>
+
+				<div class="col-md-5">
+					<h3>Entre em contacto</h3>
+					<p>
+						Rua Prista Monteiro, nº18<br>
+						1600-253 Telheiras, Lisboa - Portugal<br>
+						Móvel: (+351) 939 678 026<br>
+						E-mail: fabricio.rocha@uxdevelop.com
+					</p>
+				</div>
+
+				<div class="col-md-7">
+					<h3>Envie uma mensagem</h3>
+
+					<form action="envia.php" method="post" name="form" id="ajax_form">
+						<div class="form-group">
+							<label for="nome">Nome:</label>
+							<input type="text" name="nome" class="form-control" placeholder="Digite seu nome" required="required">
+						</div>
+
+						<div class="form-group">
+							<label for="email">E-mail:</label>
+							<input type="email" name="email" class="form-control" placeholder="Digite o seu e-mail" required="required">
+						</div>
+
+						<div class="form-group">
+							<label for="mensagem">Escreva sua mensagem:</label>
+							<textarea name="mensagem" class="form-control" placeholder="Digite a sua mensagem" required="required"></textarea>
+						</div>
+
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="termo-rgpd"><span style="font-size: 12px;"> Concordo com a recolha dos meus dados através do formulário de acordo com a <a href="rgpd.html">Política de Privacidade</a></span>
+							</label>
+						</div>
+
+						<button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+						<div id="msg"></div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-6 col-footer">
+					<span>
+						<a href="rgpd.html" title="UX Developer">Política de privacidade</a>&nbsp; &copy; 2018 UX Developer. Todos os direitos reservados.
+					</span>
+				</div>
+
+				<div class="col-md-6">
+					
+					<div class="div-zaask">
+						<span class="selo-zaask"><a target="_blank" href="https://www.zaask.pt/user/fabrc7 " alt="Empresas Zaask" title="Empresas Zaask"><img src="https://www.zaask.pt/widget?user=253946&widget=pro-findme&single=true&size=sm" alt="Fabrício Rocha"></a></span>
+					</div>
+
+					<div>
+						<ul class="social">
+							<li class="social-item">
+								<a href="https://github.com/Developer-Rocha" target="_blank">
+									<img src="images/icon-github.png">
+								</a>
+							</li>
+
+							<li class="social-item">
+								<a href="https://www.linkedin.com/in/fabr%C3%ADcio-rocha-345a2aa4/" target="_blank">
+									<img src="images/icon-linkedin.png">
+								</a>
+							</li>
+
+							<li class="social-item">
+								<a href="https://www.facebook.com/profile.php?id=100008234592103" target="_blank">
+									<img src="images/icon-facebook.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+
+	<!-- JQuery Scroll-->
+	<!--  APAGAR ESSA PARTE
+		<script type="text/javascript" src="scroll-ancora.js"></script>
+	-->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>

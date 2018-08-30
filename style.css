@@ -1,0 +1,361 @@
+/*
+* @Projeto UX-Developer
+* @author Fabrício Rocha
+* @version 1.0
+*/
+
+/* ============================ layout ============================= */
+html, body, .capa{
+	height: 100%;
+}
+
+body{
+	background: linear-gradient(50deg, rgba(255,255,255,0.3), rgba(0,0,0,0.5)),
+			  	url('images/papel.jpg');
+	background-attachment: fixed;
+	background-size: auto;
+	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+
+/* -- Navbar -- */
+.img-logo{
+	height: 80px;
+	width: 90px;
+	display: block;
+	background: url('images/logo-w.png') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+.navbar-brand{
+	padding: 0px 15px;
+	margin-top: -15px;
+}
+
+nav.navbar-transparente{
+	background: rgba(0,0,0,0.5);
+	border: none;
+	padding: 20px 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: #fff;
+	font-weight: bolder;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: #9bf0e1;
+}
+
+nav.menu-diferente{
+	padding: 10px 0px;
+}
+
+.logo-scroll{
+	height: 70px;
+	width: 70px;
+	margin-top: 8px; 
+}
+
+/* --------- Capa --------- */
+.capa{
+	display: table;
+	width: 100%;
+}
+
+.texto-capa{
+	text-align: center;
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.my-img{
+	position: absolute;
+	top: -145px;
+	left: -100px;
+	height: 400px;
+	width: 800px;
+	transform: rotate(10deg);
+}
+
+.box-main{
+	background: rgba(155,155,155,0.5);
+	border-radius: 100px 75px;
+	height: 230px;
+	padding: 15px;
+			box-shadow: 5px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.5);
+	   -moz-box-shadow: 5px 5px rgba(0,0,0,0.5);
+	margin-top: 50px;
+	transition-property: background;
+	transition-duration: 2s;
+}
+
+.box-main:hover{
+	background: rgba(50,50,50,0.5);
+}
+
+/* --------- Botões --------- */
+.btn-custom{
+	color: #fff;
+	font-weight: bolder;
+	font-size: 18px;
+	width: 200px;
+	height: 50px;
+	padding-top: 12px;
+	border-radius: 25px;
+	border: none;
+	margin: 10px;
+	background: rgba(0,0,0,0.8);
+}
+
+/* --------- Conteúdos -------- */
+
+/************** PROJETOS *************/
+#my-project{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background: #fff;
+}
+
+.logo-client{
+	text-align: center;
+	height: 80px;
+	padding-top: 25px;
+}
+
+.client02{
+	padding-top: 5px;
+}
+
+.item{
+	margin-top: 30px; 
+	margin-bottom: 25px;
+}
+
+.item picture img{
+	height: 216px;
+	width: 344px;
+	transition-property: width, height;
+	transition-duration: 0.5s;
+}
+
+.item picture img:hover{
+	width: 366px;
+	height: 226px;
+}
+
+/************** SOBRE *************/
+#sobre{
+	background: #f0f0f0;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.about-me p{
+	text-align: justify;
+}
+
+.img-box{
+	text-align: center;
+}
+
+.img-box img{
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	box-shadow: 15px 15px rgba(150,150,150,0.2);
+	-webkit-box-shadow: 15px 15px rgba(150,150,150,0.2);
+	-moz-box-shadow: 15px 15px rgba(150,150,150,0.2);
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+/************** SKILL *************/
+#skill{
+	background: #fff;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.row-skill{
+	margin-top: 20px;
+}
+
+.block-title{
+	margin-bottom: 40px;
+}
+.article{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.article p{
+	text-align: justify;
+}
+
+.article-img img{
+	width: 100px;
+	height: 100px;
+	transition-property: transform;
+	transition-duration: 1.5s;
+}
+
+.article-img img:hover{
+	transform: rotate(360deg);
+}
+
+.banner{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+/************** CONTACTO *************/
+#contacto{
+	background: #f0f0f0;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#texto{
+	resize: none;
+	height: 80px;
+}
+
+/************** FOOTER *************/
+footer{
+	background: rgb(154,154,154);
+	padding: 5px 0px 10px 0px;
+	position: relative;
+}
+
+.selo-zaask{
+	float: right;
+}
+
+.selo-zaask a img{
+	width: 160px;
+	height: 70px;
+	margin-top: -8px;
+}
+
+.div-zaask{
+	float: left;
+}
+
+.col-footer{
+	padding-top: 20px;
+	color: #fff;
+}
+
+.col-footer a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.col-footer a:hover{
+	text-decoration: none;
+}
+
+.social{
+	display: block;
+}
+.social-item{
+	float: right;
+	list-style: none;
+}
+
+.social-item img{
+	height: 40px;
+	width: 40px;
+}
+
+.author-text{
+	text-align: right;
+	padding-right: 55px;
+}
+
+/************** PÁGINA RGPD *************/
+.rgpd-body{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+/* =========================== Tipografia ========================== */
+
+h1{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 20px;
+}
+
+.block-title>h2{
+	font-size: 40px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+footer p{
+	font-size: 12px;
+}
+
+.description p{
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+/* =========================== Animation ========================== */
+
+/* =========================== Media queries ========================== */
+@media all and (max-width: 768px){
+	.img-logo{
+		height: 65px;
+		width: 70px;
+	}
+
+	.navbar-brand{
+		padding: 0px 15px;
+		margin-top: -15px;
+	}
+
+	.logo-scroll{
+	height: 55px;
+	width: 60px;
+	margin-top: 8px; 
+	}
+
+	h1{
+		font-size: 40px;
+		font-size: 500;
+	}
+
+	.btn-custom{
+	width: 190px;
+	height: 50px;
+	margin: -15px;
+	}
+
+	.row-skill{
+	margin-top: 20px;
+	margin-bottom: -45px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.selo-zaask a img{
+	width: 150px;
+	height: 80px;
+	margin-top: -8px;
+	}
+
+}
